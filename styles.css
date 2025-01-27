@@ -109,6 +109,40 @@ ul {
   padding: 0;
 }
 
+.image-banner {
+  position: relative;
+  margin: 20px 0;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 10px var(--card-shadow);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.image-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.image-banner:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px var(--hover-shadow);
+}
+
+.image-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.4);
+}
+
 /* Card Styles for Services, Events, & Resources */
 .card {
   background: var(--card-background);
